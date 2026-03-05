@@ -1,11 +1,8 @@
 import os
-import tempfile
+import sys
 
-tmp = tempfile.NamedTemporaryFile(suffix=".wav", delete=False)
-
-print(tmp.name)
-print(tmp)
-
-os.unlink(tmp)
-
-print(tmp.name)
+print(os.path.dirname(__file__))
+print(os.path.abspath(__file__))
+print(os.path.realpath(__file__))
+print(sys.executable)
+print(sys.modules)

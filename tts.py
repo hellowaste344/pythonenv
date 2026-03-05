@@ -4,14 +4,20 @@ engine = pyttsx3.init()
 
 # VOICE
 voices = engine.getProperty("voices")
-for index, voice in enumerate(voices):
-    print(f"Index {index}")
-    print(f"Name {voice.name}")
-    print(f"ID {voice.id}")
-    print(f"Gender {voice.gender}")
-    print("*" * 10)
 
-engine.setProperty("voice", voices)
+
+def agent_voice():
+    for index, voice in enumerate(voices):
+        print(f"Index {index}")
+        print(f"Name {voice.name}")
+        print(f"ID {voice.id}")
+        print(f"Gender {voice.gender}")
+        print("*" * 10)
+        if "zh" in voice.id.lower():
+            return voice.id
+
+
+engine.setProperty("voice", agent_voice())
 
 engine.say("Hi, I am Samantha")
 engine.runAndWait()
@@ -37,7 +43,7 @@ engine.stop()
 
 engine.save_to_file(
     "Super Computers Can Change The World",
-    "test.mp3",
+    "test.wav",
 )
 
 engine.runAndWait()
