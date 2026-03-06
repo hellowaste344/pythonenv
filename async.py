@@ -26,7 +26,6 @@ async def main():
 
 
 start = time.perf_counter()
-# asyncio.run(func())
 asyncio.run(main())
 end = time.perf_counter()
 print(f"Total time passed: [{end - start:.4f}]")

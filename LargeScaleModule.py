@@ -67,5 +67,5 @@ async def fast_input():
 
 
 if __name__ == "__main__":
-    asyncio.run(normal_input())
     asyncio.run(fast_input())
+    asyncio.run(normal_input())
