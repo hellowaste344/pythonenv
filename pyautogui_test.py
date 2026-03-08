@@ -4,7 +4,7 @@ import time
 import pyautogui
 
 
-def screenshot():
+def screencapture():
 
     while True:
         seed = random.randint(1, 3)
@@ -18,4 +18,4 @@ def screenshot():
         snapshot.save(file_name)
 
 
-screenshot()
+screencapture()

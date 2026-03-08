@@ -4,7 +4,7 @@ import time
 import mss
 
 
-def screenshot():
+def screencapture():
 
     while True:
         seed = random.randint(1, 3)
@@ -17,4 +17,4 @@ def screenshot():
             sct.shot(output=file_name)
 
 
-screenshot()
+screencapture()
