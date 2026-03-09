@@ -2,6 +2,8 @@ import os
 import random
 import sys
 
+import sounddevice as sd
+
 print(os.path.dirname(__file__))
 print(os.path.abspath(__file__))
 print(os.path.realpath(__file__))
@@ -15,3 +17,5 @@ seed = random.randint(0, 3)
 opts = ("a", "b", "c", "d")
 print(type(opts))
 print(opts[seed])
+
+print(sd.query_devices())
