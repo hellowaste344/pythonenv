@@ -13,3 +13,4 @@ with sr.Microphone() as source:
         print("text: ", r.recognize_google(audio_text))
     except Exception as exc:
         print(f"Sorry, I did not get that {exc}")
+        pass
