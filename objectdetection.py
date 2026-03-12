@@ -10,7 +10,7 @@ yolov8n.pt = Nano(fastest, less acurate)
 yolov8s.pt = Small
 yolov8l.pt = Large(slow, most accurate)
 """
-model = YOLO("yolov8l.pt")
+model = YOLO("yolov8n.pt")
 
 path = Path("sample.mp4")
 

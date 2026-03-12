@@ -1,4 +1,4 @@
-import cv2
+import cv2  # type: ignore
 
 src = cv2.imread(r"logo.jpg")
 

@@ -1,5 +1,5 @@
-from pydub import AudioSegment
-from pydub.playback import play
+from pydub import AudioSegment  # type: ignore
+from pydub.playback import play  # type: ignore
 
 wav_file = AudioSegment.from_file(file="test.wav", format="wav")
 
@@ -22,5 +22,5 @@ wav_file_new = wav_file + lower_volume_wav
 play(wav_file_new)
 
 louder_wav_file = wav_file + 10
-louder_wav_file.export(out_f="louder_wav_file", format="wav")
+louder_wav_file.export(out_f="louder_test.wav", format="wav")
 play(louder_wav_file)
