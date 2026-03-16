@@ -72,7 +72,7 @@ data = """
     "email": "@example.com",
     "address": {
         "street": "Shibuya",
-        "city": "Tokio"
+        "city": "Tokyo"
         }
     }
 """
@@ -91,7 +91,7 @@ class Product(BaseModel):
     tags: List[str] = []
 
 
-p = Product(name="Dictionery", price=10, tags=["stationery"])
+p = Product(name="Dictionary", price=10, tags=["stationery"])
 
 print(p)
 

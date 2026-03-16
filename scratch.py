@@ -3,6 +3,7 @@ import random
 import sys
 from pathlib import Path
 
+import mss
 import sounddevice as sd
 from ultralytics import YOLO
 
@@ -26,3 +27,7 @@ print(path)
 
 model = YOLO("yolov8n.pt")
 print(model.names)
+
+with mss.mss() as sct:
+    for i in range(len(sct.monitors)):
+        print(sct.monitors[i])

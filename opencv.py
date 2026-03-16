@@ -8,7 +8,10 @@ cv2.COLOR_BGR2RGB BGR: RGB
 cv2.COLOR_BGR2HSV BGR: HSV
 cv2.COLOR_BGR2LAB BGR: LAB color space
 """
+cv2.imshow("BGR logo", src)
 # opencv reads image in BGR format not RGB
+rgb = cv2.cvtColor(src, cv2.COLOR_BGR2RGB)
+cv2.imshow("RGB logo ", rgb)
 hsv = cv2.cvtColor(src, cv2.COLOR_BGR2HSV)
 cv2.imshow("HSV logo ", hsv)
 

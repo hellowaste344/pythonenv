@@ -20,7 +20,7 @@ videoCap = cv2.VideoCapture(str(path))
 def getColours(cls_id):
 
     random.seed(cls_id)
-    return tuple(random.randint(0, 255) for _ in range(3))
+    return tuple(random.randint(0, 255) for _ in range(3))  # (R,G,B)
 
 
 frame_rate = 0
@@ -69,4 +69,4 @@ elapsed = time.perf_counter()
 videoCap.release()
 cv2.destroyAllWindows()
 
-print(f"Fps: {frame_rate / (elapsed - t0)}")
+print(f"Fps: {frame_rate / (elapsed - t0):.4f}")

@@ -2,7 +2,7 @@ import urllib.request
 import urllib.robotparser as rb
 from urllib.parse import urlparse, urlunparse
 
-request_url = urllib.request.urlopen("http://zenonai-theta-livid.vercel.app")
+request_url = urllib.request.urlopen("http://zenonai.net")
 print(request_url.read()[:100], end="\n\n")
 
 parse_url = urlparse("http://zenonai.net")

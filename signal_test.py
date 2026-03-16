@@ -7,9 +7,9 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
-def signal_handler(sig, frame):  # noqa: ANN001
-    logger.info("Received signal %s", sig)
-    sys.exit()
+def signal_handler(signum: int, _frame) -> None:  # noqa: ANN001
+    sig_name = signal.Signals(signum).name
+    logger.info("Received signal %s", sig_name)
 
 
 signal.signal(signal.SIGINT, signal_handler)

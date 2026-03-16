@@ -1,6 +1,6 @@
-import matplotlib.pyplot as plt
-import sounddevice as sd
-import soundfile as sf
+import matplotlib.pyplot as plt # type: ignore
+import sounddevice as sd # type: ignore
+import soundfile as sf # type: ignore
 
 
 def voice_rec():
