@@ -1,6 +1,5 @@
 import logging
 import signal
-import sys
 import time
 
 logging.basicConfig(level=logging.INFO)

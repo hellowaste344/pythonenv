@@ -1,5 +1,4 @@
 import cv2 # type: ignore
-import math
 import time
 import argparse
 from pathlib import Path

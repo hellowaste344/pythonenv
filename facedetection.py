@@ -10,7 +10,7 @@ face_cascade = cv2.CascadeClassifier(
     cv2.data.haarcascades + "haarcascade_frontalface_default.xml"
 )
 
-videoCap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(0)
 
 
 def face_detector():
@@ -19,12 +19,12 @@ def face_detector():
         logger.error("Failed to load Haar cascade")
         exit()
 
-    if not videoCap.isOpened():
+    if not cap.isOpened():
         logger.error("Failed to open camera")
         exit()
 
     while True:
-        ret, frame = videoCap.read()
+        ret, frame = cap.read()
 
         if not ret:
             logger.error("Error: couldn't fetch the frame")
@@ -41,13 +41,11 @@ def face_detector():
 
         cv2.imshow("Face detection: ", frame)
 
-        key = cv2.waitKey(1) & 0xFF
-
-        if key == ord("q") or key == 27:
+        if cv2.waitKey(1) >= 0:
             break
 
 
 if __name__ == "__main__":
     face_detector()
-    videoCap.release()
+    cap.release()
     cv2.destroyAllWindows()

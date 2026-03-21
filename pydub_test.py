@@ -13,6 +13,7 @@ print(len(wav_file))
 
 # increasing db
 higher_volume_wav = wav_file + 10
+
 lower_volume_wav = wav_file - 5
 
 play(higher_volume_wav)

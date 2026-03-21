@@ -1,7 +1,7 @@
-import matplotlib.pyplot as plt # type: ignore
+import matplotlib.pyplot as plt 
 import sounddevice as sd # type: ignore
 import soundfile as sf # type: ignore
-
+import os
 
 def voice_rec():
     fs = 48000
@@ -17,6 +17,7 @@ def voice_rec():
     sd.play(data, fs)
     sd.wait()
 
+    os.unlink("Audio_file.flac")
     print(record.shape)
     plt.plot(record[:, 0], label="Right")
     plt.plot(record[:, 1], label="Left")

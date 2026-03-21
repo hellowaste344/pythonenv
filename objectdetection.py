@@ -14,7 +14,7 @@ model = YOLO("yolov8n.pt")
 
 path = Path("sample.mp4")
 
-videoCap = cv2.VideoCapture(str(path))
+cap = cv2.VideoCapture(str(path))
 
 
 def getColours(cls_id):
@@ -27,7 +27,7 @@ frame_rate = 0
 
 t0 = time.perf_counter()
 while True:
-    ret, frame = videoCap.read()
+    ret, frame = cap.read()
     if not ret:
         break
 
@@ -66,7 +66,7 @@ while True:
     frame_rate += 1
 elapsed = time.perf_counter()
 
-videoCap.release()
+cap.release()
 cv2.destroyAllWindows()
 
 print(f"Fps: {frame_rate / (elapsed - t0):.4f}")
