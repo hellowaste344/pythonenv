@@ -1,5 +1,9 @@
 venv
 .venv
 __pycache__
+create_cv.py
 .env
 *.pt
+*.wav
+*.flac
+*.mp3

@@ -26,9 +26,6 @@ def Detect_Eye(eye):
     aspect_ratio_Eye = (poi_A+poi_B)/(2*poi_C)
     return aspect_ratio_Eye
 
-
-# MAIN LOOP IT WILL RUN ALL THE UNLESS AND 
-# UNTIL THE PROGRAM IS BEING KILLED BY THE USER
 while cv2.waitKey(5) < 0:
     null, frame = cap.read()
     gray_scale = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)

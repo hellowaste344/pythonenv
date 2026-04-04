@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 #initializing the neural network
-def initialize_parameters(input_size, hidden_size, output_size):
+def initialize_parameters(input_size: str, hidden_size: str, output_size: str) -> dict:
     np.random.seed(42)
     parameters = {
         "W1": np.random.rand(hidden_size, input_size) * 0.01,

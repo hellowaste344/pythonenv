@@ -27,10 +27,9 @@ temp.close()
 temp_dir = tempfile.TemporaryDirectory()
 print(temp_dir)
 
-# file doesn't get deleted when closed
 secure_temp = tempfile.mkstemp(prefix="c_", suffix=".json")
 print(secure_temp)
-# directory version
+
 secure_temp = tempfile.mkdtemp(prefix="c_", suffix="_dir")
 print(secure_temp)
 

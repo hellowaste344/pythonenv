@@ -1,4 +1,4 @@
-import speech_recognition as sr
+import speech_recognition as sr # type: ignore
 
 r = sr.Recognizer()
 r.energy_threshold = 300
@@ -7,7 +7,7 @@ r.pause_threshold = 1.5
 with sr.Microphone() as source:
     print("Say sth\n")
     audio_text = r.listen(source)
-    print("thanks")
+    print("\nthanks")
 
     try:
         print("text: ", r.recognize_google(audio_text))
