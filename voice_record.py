@@ -24,5 +24,5 @@ def voice_rec():
     plt.legend()
     plt.show()
 
-
-voice_rec()
+if __name__ == "__main__":
+    voice_rec()
