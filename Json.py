@@ -10,7 +10,7 @@ print("\nNow convert from JSON to Python")
 d = json.loads(emp)
 print("converted to pyhton", type(d))
 print(d)
-
+'''
 # convert python dict to JSON
 d = {"id": "09", "name": "nitin", "department": "finance"}
 obj = json.dumps(d, indent=4)
@@ -29,3 +29,4 @@ with open("sample.json", "r") as f:
 
 print(type(data))
 print(data)
+'''

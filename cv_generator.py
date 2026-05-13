@@ -10,7 +10,7 @@ from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import mm
 from reportlab.pdfgen import canvas as pdfcanvas
 
-OUTPUT_FILE = "/home/Xashe/Documents/myCV1.pdf"
+OUTPUT_FILE = "/home/Xashe/Documents/myCV.pdf"
 
 # ── DIMENSIONS ───────────────────────────────────────────────────────────────
 PAGE_W, PAGE_H = A4
@@ -602,7 +602,7 @@ def draw_footer(c):
     c.setFont("Helvetica", 7)
     c.setFillColor(SIDEBAR_DIM)
     c.drawCentredString(PAGE_W / 2, 3*mm,
-                        f"{FULL_NAME}  ·  {EMAIL}  ·  {WEBSITE}  ·  Open to senior backend & security roles")
+                    f"{FULL_NAME}  ·  {EMAIL}  ·  {WEBSITE}  ·  Open to Full time jobs and Internships")
 
 
 # ══════════════════════════════════════════════════════════════════════════════

@@ -1,0 +1,29 @@
+#!/usr/bin/python3
+import sys
+
+
+def solve(lines, idx, n, results):
+    if n == 0:
+        return results
+
+    x  = int(lines[idx])        # X is at current line
+    nums = lines[idx + 1].split() # numbers are always the very next line
+
+    if len(nums) != x:
+        return solve(lines, idx + 2, n - 1, results + [-1])
+
+    total = sum(map(lambda y: y ** 4,filter(lambda y: y <= 0, map(int, nums))))
+
+    return solve(lines, idx + 2, n - 1, results + [total])
+    
+    
+def main():    
+    lines   = sys.stdin.read().splitlines()
+    n       = int(lines[0])
+    results = solve(lines, 1, n, [])
+    print('\n'.join(map(str, results)))
+        
+
+
+if __name__ == "__main__":
+    main()
