@@ -2,7 +2,7 @@ import json
 import time
 import base64
 import requests
-from jwcrypto import jwk, jwe
+from jwcrypto import jwk, jwe # type: ignore
 import sys
 TARGET = sys.argv[1]
 # Step 1: Fetch the RSA public key from JWKS

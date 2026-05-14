@@ -1,6 +1,6 @@
 import json
 import base64
-from jwcrypto import jwk, jwt
+from jwcrypto import jwk, jwt 
 import time
 
 key = jwk.JWK.generate(
@@ -10,8 +10,8 @@ key = jwk.JWK.generate(
     use='sig',
     alg='ES256',
 )
-privateKey = key.export_private()
-publicKey = key.export_public()
+privateKey = jwk.JWK.from_json(key.export_private())
+publicKey = jwk.JWK.from_json(key.export_public())
 
 t0 = int(time.time())
 
@@ -34,5 +34,14 @@ jwtToken = jwt.JWT(
     claims = payload,
 )
 
-jwtToken.make_signed_token(key)
-print(f"Signature: {jwtToken}")
+jwtToken.make_signed_token(privateKey)
+token = jwtToken.serialize()
+
+print(f"Signature: {token}")
+
+verified = jwt.JWT(
+    jwt = token,
+    key = publicKey,
+)
+
+print(verified.claims)

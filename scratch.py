@@ -3,10 +3,10 @@ import random
 import sys
 from pathlib import Path
 
-import mss
+#import mss
 import sounddevice as sd
-from ultralytics import YOLO
-
+#from ultralytics import YOLO 
+'''
 print(os.path.dirname(__file__))
 print(os.path.abspath(__file__))
 print(os.path.realpath(__file__))
@@ -31,3 +31,7 @@ print(model.names)
 with mss.mss() as sct:
     for i in range(len(sct.monitors)):
         print(sct.monitors[i])
+'''
+
+pairs = {"gender":"male", "city":"tokyo", "age":20}
+print(f"{**pairs}")
