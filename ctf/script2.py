@@ -21,5 +21,3 @@ print("Duplicate Hexadigest: " + duplicateDigest.hexdigest())
 print("Digest size: " + str(clonedDigest.digest_size) + " bytes")
 print("Block size: " + str(clonedDigest.block_size) + " bytes")
 print("Digest name: " + str(clonedDigest.name))
-
-

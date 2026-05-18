@@ -36,7 +36,7 @@ GOLD         = colors.HexColor("#F59E0B")
 
 # ── PERSONAL DATA ─────────────────────────────────────────────────────────────
 FULL_NAME  = "Omer Faruk Polat"
-JOB_TITLE  = "Backend Engineer  ·  Security Researcher  ·  Systems Specialist"
+JOB_TITLE  = "Backend Engineer  ·  Cyber Security Specialist"
 EMAIL      = "xashe107@gmail.com"
 GITHUB     = "github.com/hellowaste344"
 TWITTER    = "x.com/XAshe_01"
@@ -45,17 +45,16 @@ WEBSITE    = "zenonai.net"
 
 # ── PERSONAL STATEMENT ────────────────────────────────────────────────────────
 PERSONAL_STATEMENT = (
-    "I am a backend developer with 3+ years shipping product experience at the "
-    "intersection of security and infrastructure. Proven track record across "
-    "SaaS delivery, red-team engagements, and hardware level implementation. "
-    "Following curiosity depth in system-design alongside security hardening."
+    "I am a system designer with over 3+ years of experience "
+    "building CI/CD pipelines, fortifying system design "
+    "and hardening vulnerability exposures."
 )
 
 # ── EXPERIENCE ────────────────────────────────────────────────────────────────
 # Each entry: (title, company_location, date_range, bullet_list)
 EXPERIENCE = [
     (
-        "Founder & Lead Backend Engineer",
+        "Founder",
         "ZenonAI · zenonai.net  ·  Remote",
         "Jan 2026 – Present",
         [
@@ -150,8 +149,8 @@ SKILLS_GROUPED = [
     ("Security",      ["Red Teaming", "Pen Testing"]),
     ("Backend",       ["REST APIs", "System Design", "Performance Tuning"]),
     ("ML / AI",       ["TensorFlow", "PyTorch", "YOLO", "OpenCV", "NLP", "RL"]),
-    ("Tools",         ["Metasploit", "Burp Suite", "Ghidra", "Wireshark"]),
-    ("Infra / Cloud", ["Docker", "Kubernetes", "SDK", "CI/CD", "Debian"]),
+    ("Tools",         ["Metasploit", "Burp Suite", "Ghidra", "Wireshark", "TCPDUMP"]),
+    ("Infra / Cloud", ["Docker", "Kubernetes", "SDK", "CI/CD", "AWS"]),
     ("Networking",    ["TCP/IP", "DNS", "TLS/SSL", "iptables", "VPN/VPS"]),
     ("Dev",           ["Git", "CMake", "GDB"]),
 ]
@@ -165,7 +164,7 @@ CERTIFICATIONS = [
 
 # ── EDUCATION ─────────────────────────────────────────────────────────────────
 EDUCATION = (
-    "B.Sc. Computer Engineering",
+    "B.E. Computer Engineering",
     "Bahcesehir University, Istanbul",
     "Expected 2027  ·  Systems Programming & Network Security",
     [
@@ -184,8 +183,7 @@ LANGUAGES = [
 HIGHLIGHTS = [
     "3+ Years Backend & Security",
     "Shipped Production SaaS",
-    "Backend Dev · Offensive Sec",
-    "OSCP · CRTP Certified",
+    "Backend Dev · Offensive Security",
 ]
 
 
