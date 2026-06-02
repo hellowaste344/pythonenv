@@ -45,7 +45,7 @@ WEBSITE    = "zenonai.net"
 
 # ── PERSONAL STATEMENT ────────────────────────────────────────────────────────
 PERSONAL_STATEMENT = (
-    "I am a system designer with over 3+ years of experience "
+    "Backend developer with over 3+ years of experience "
     "building CI/CD pipelines, fortifying system design "
     "and hardening vulnerability exposures."
 )
@@ -58,15 +58,11 @@ EXPERIENCE = [
         "ZenonAI · zenonai.net  ·  Remote",
         "Jan 2026 – Present",
         [
-            "Architected and shipped a privacy-first, fully offline AI assistant "
-            "from zero to paying customers — solo, end-to-end, with no cloud "
-            "dependency; manages real production traffic and an active user base.",
-            "Designed a high-performance Rust + Python backend with a Tauri/React "
+            "Architected and shipped end-to-end fully offline AI assistant "
+            "with no cloud dependency; manages real production traffic and an active user base.",
             "desktop client and local LLM inference via Ollama; responsible for all "
             "infrastructure, CI/CD pipelines, release management, and product roadmap.",
             "Owned the full SDLC: threat modelling, secure coding practices, "
-            "automated testing, and user onboarding."
-            "response latency on commodity hardware.",
         ]
     ),
     (
@@ -89,9 +85,9 @@ EXPERIENCE = [
         [
             "Shipped performance-critical patches to Python and C++ security "
             "tooling in active open-source projects; contributions merged after "
-            "structured code review with maintainers.",
-            "Competed regularly in CTF competitions, publishing detailed technical "
-            "write-ups that have attracted 200+ GitHub stars across community",
+            "structured code review with maintainers CI/CD workflow. "
+            "Competed regularly in CTF competitions(HackTheBox, Cylab) "
+            "publishing detailed technical write-ups on github. "
         ]
     ),
 ]

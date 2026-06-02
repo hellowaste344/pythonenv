@@ -6,6 +6,18 @@ NOT(~) inverts all bits (0 becomes 1, 1 becomes 0), using two's complement ~x = 
 Left Shift(<<) moves all bits left by the specified numbers of positions, filling right with zeros
 Right Shift(>>) moves all bits right by the specified positions, filling left with sign bits
 """
-n = 16
-if n > 0 and (n & (n-1)) == 0:
-    print(f'{n} is power of 2')
+class Solution:
+    def myPow(self, x: float, n: int) -> float:
+        result, power = 1, n
+        if power < 0:
+            x, power = 1.0/x, -power
+        while power:
+            if power & 1:
+                result *= x
+            x, power = x*x, power >> 1
+        return result
+    
+s = Solution()
+x = 2
+n = 13
+print(s.myPow(x, n))

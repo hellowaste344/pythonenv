@@ -18,3 +18,6 @@ I	         Unsigned int	    4
 f	         Float	            4
 d	         Double	            8
 '''
+
+binary = '111111'
+int()
