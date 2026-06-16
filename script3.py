@@ -22,3 +22,4 @@ with open("/usr/share/wordlists/rockyou.txt", "rb") as f:
             print(f"Found: {attempt.decode()}")
             break
         print(f"Attempt {attempt.decode()} failed")
+
