@@ -32,7 +32,7 @@ source venv/bin/activate   # Linux / macOS
 ```
 
 ---
-## 🚀 Code of Conduct
+## Code of Conduct
 
 ### ✨ Contributions are highly welcome!
 
